@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --bg : #eee;
+            --heading: grey;
+            --card-bg: white;
+            --card-head1: purple;
+            --card-head2: yellow;
+            --card-head3: green;
+            --size-h: 25px;
+            --size-p: 16px;
+        }
+        .main{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .menu{
+            height: auto;
+            width: 350px;
+            padding-top: 30px;
+            margin-left: 38.5%;
+            background-color: var(--bg);
+            padding-bottom: 30px;
+            h2{
+                background-color: var(--heading);
+                display: inline-block;
+            }
+        }
+        .card{
+            height: 150px;
+            width: 250px;
+            border: 1px solid black;
+            display: inline-block;
+            margin-top: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .heading{
+            border-bottom: 2px solid black;
+            font-size: var(--size-h);
+            font-weight: 600;
+            font-style: italic;
+        }
+        .first{
+            background-color: var(--card-head1);
+        }
+        .second{
+            background-color: var(--card-head2);
+        }
+        .third{
+            background-color: var(--card-head3);
+        }
+        .content{
+            font-size: var(--size-p);
+        }
+        .price{
+            font-weight: 550;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <h2>Whiterun Tavern</h2>
+            <div class="card">
+            <div class="heading first">Pizza</div>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam explicabo ipsam at dolores libero officiis quam quaerat deleniti cumque similique!</p>
+            <p class="price">Price: $14.99</p>
+        </div>
+        <div class="card">
+            <div class="heading second">Bread</div>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, obcaecati nostrum. Mollitia earum itaque voluptates rem minus quasi voluptate at?</p>
+            <p class="price">Price: $4.99</p>
+        </div>
+        <div class="card">
+            <div class="heading third">Squid</div>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ea voluptates beatae laudantium libero modi impedit quas obcaecati necessitatibus. Quis.</p>
+            <p class="price">Price: $9.99</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
