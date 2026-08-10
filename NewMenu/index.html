@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #d1ccdc;
+        }
+        #header{
+            border-bottom: 4px solid black;
+        }
+        .main{
+            height: 650px;
+            width: 100%;
+        }
+        .menu{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            align-content: space-around;
+        }
+        .items{
+            height: auto;
+            width: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            h2{
+                border-bottom: 3px solid black;
+                font-weight: 600;
+                font-style: italic;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            ul{
+                list-style-position: inside;
+            }
+        }
+        #footer{
+            position: absolute;
+            left: 45%;
+            bottom: 0%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Welcome to Our Restaurant</h1>
+    </header>
+    <!-- main Section -->
+    <main class="main">
+        <div class="menu">
+            <div class="items drinks">
+                <h2>Drinks</h2>
+                <ul>
+                    <li>Sparkling Lemonade — fresh lemon, mint, sparkling water, served chilled — <b>$3.50</b></li>
+                    <li>Iced Hibiscus Tea — hibiscus flowers, lime, honey — <b>$3.00</b></li>
+                    <li>Espresso Shot — rich single-origin espresso — <b>$2.50</b></li>
+                    <li>Classic Cola — chilled cola with a lemon wedge — <b>$2.00</b></li>
+                </ul>
+            </div>
+            <div class="items staters">
+                <h2>Staters</h2>
+                <ul>
+                    <li>Bruschetta Trio — toasted baguette with tomato-basil, mushroom, and avocado toppings — <b>$6.50</b></li>
+                    <li>Crispy Calamari — lightly fried calamari rings, lemon aioli dip — <b>$8.00</b></li>
+                    <li>Mediterranean Hummus Plate — hummus, pita, olives, cucumber, feta — <b>$7.00</b></li>
+                    <li>Spiced Sweet Potato Fries — chili-lime fries with garlic dip — <b>$5.50</b></li>
+                </ul>
+            </div>
+            <div class="items main-course">
+                <h2>Main-Course</h2>
+                <ul>
+                    <li>Grilled Chicken Alfredo — fettuccine, creamy garlic sauce, parmesan — <b>$13.00</b></li>
+                    <li>Pan-Seared Salmon — lemon-butter sauce, roasted asparagus, baby potatoes — <b>$16.50</b></li>
+                    <li>Vegetarian Lasagna — roasted vegetables, ricotta, tomato sauce — <b>$12.00</b></li>
+                    <li>Mushroom Risotto — arborio rice, wild mushrooms, parmesan — <b>$13.50</b></li>
+                </ul>
+            </div>
+            <div class="items dessert">
+                <h2>Dessert</h2>
+                <ul>
+                    <li>Chocolate Lava Cake — warm chocolate cake with vanilla ice cream — <b>$6.50</b></li>
+                    <li>Tiramisu — espresso-soaked ladyfingers, mascarpone cream — <b>$6.50</b></li>
+                    <li>Mango Sorbet — refreshing mango sorbet with mint — <b>$4.50</b></li>
+                    <li>Creme Brulee — caramelized sugar crust with vanilla custard — <b>$6.75</b></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
